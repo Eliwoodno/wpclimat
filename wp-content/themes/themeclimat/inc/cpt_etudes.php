@@ -1,7 +1,7 @@
 <?php
-add_action( 'init', 'add_custom_post_type_ong' );
+add_action( 'init', 'add_custom_post_type_etude' );
 
-function add_custom_post_type_ong()
+function add_custom_post_type_etude()
 {
     $post_type = "etudes";
     $labels = array(
