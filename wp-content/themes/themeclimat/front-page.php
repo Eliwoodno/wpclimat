@@ -32,26 +32,34 @@
   <div>
     <h3>ASSOCIATIONS PARTENAIRES</h3>
     <div>
+      <?php
+        $args =  array(
+          'post_type' => 'ong',
+          'posts_per_page' => 5
+        );
+        $the_query = new WP_Query( $args );
+        if($the_query-> have_posts())
+        {
+          while($the_query-> have_posts())
+          {
+            $the_query-> the_post();
+      ?>
       <div>
-        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-        <p>ONG 1<p>
+        <a href="<?php the_field('lien_don') ?>">
+          <?php the_post_thumbnail( 'ong-thumb', array(
+            'class' => "ong-logo",'alt' => get_the_title() ) ); ?>
+          <p><?php the_title() ?><p>
+        </a>
       </div>
-      <div>
-        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-        <p>ONG 2<p>
-      </div>
-      <div>
-        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-        <p>ONG 3<p>
-      </div>
-      <div>
-        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-        <p>ONG 4<p>
-      </div>
-      <div>
-        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-        <p>ONG 5<p>
-      </div>
+      <?php
+          }
+
+        }
+        else{
+          echo __( "No ONGs :'(", 'themeclimat' );
+        }
+        wp_reset_postdata();
+      ?>
     </div>    
          
   </div>       
