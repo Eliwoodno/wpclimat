@@ -82,6 +82,11 @@ main.front-page .ong-logo{
     margin-bottom: 20px;
     margin-right:10px;
 }
+main.front-page .ong-logo + p{
+    text-align: center;
+    width:150px;
+    margin-bottom: 20px;
+} 
 
 
 

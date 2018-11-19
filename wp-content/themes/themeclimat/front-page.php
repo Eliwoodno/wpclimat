@@ -32,11 +32,26 @@
   <div>
     <h3>ASSOCIATIONS PARTENAIRES</h3>
     <div>
-      <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-      <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-      <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-      <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-      <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
+      <div>
+        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
+        <p>ONG 1<p>
+      </div>
+      <div>
+        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
+        <p>ONG 2<p>
+      </div>
+      <div>
+        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
+        <p>ONG 3<p>
+      </div>
+      <div>
+        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
+        <p>ONG 4<p>
+      </div>
+      <div>
+        <img class="ong-logo" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
+        <p>ONG 5<p>
+      </div>
     </div>    
          
   </div>       
