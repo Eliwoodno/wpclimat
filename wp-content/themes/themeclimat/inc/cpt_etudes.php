@@ -28,7 +28,7 @@ function add_custom_post_type_etude()
         'show_ui'             => true,
         'show_in_menu'        => true,
         'menu_position'       => 5,
-        'menu_icon'           => 'welcome-learn-more',
+        'menu_icon'           => 'dashicons-welcome-learn-more',
         'show_in_nav_menus'   => true,
         'publicly_queryable'  => true,
         'exclude_from_search' => false,
