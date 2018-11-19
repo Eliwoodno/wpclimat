@@ -14,3 +14,14 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+        <header>
+            <?php
+                $args=array(
+                    'theme_location' => 'header',
+                    'menu' => 'header_fr',
+                    'menu_class' => 'menu-header',
+                    'menu_id' => 'menu_id'
+                );
+                wp_nav_menu($args);
+            ?>
+        </header>
