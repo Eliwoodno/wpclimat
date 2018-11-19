@@ -43,7 +43,7 @@ function add_custom_post_type_ong()
     $taxonomy = "geo-zone";
     $object_type = array("ong");
     $args = array(
-            'label' => __( 'Zone géohraphique' ),
+            'label' => __( 'Zone géographique' ),
             'rewrite' => array( 'slug' => 'geo-zone' ),
             'hierarchical' => true,
     );
