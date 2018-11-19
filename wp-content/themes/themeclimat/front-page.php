@@ -9,24 +9,32 @@
   <div>
     <h3>DERNIERS ARTICLES</h3>   
     <div>
-    <!-- INSERT BOUCLE WORDPRESS APPELANT ARTICLES DU PLUS AU 
-    MOINS RECENT -->
+      <?php
+          $args =  array(
+            'posts_per_page' => 3
+          );
+          $the_query = new WP_Query( $args );
+          if($the_query-> have_posts())
+          {
+            while($the_query-> have_posts())
+            {
+              $the_query-> the_post();
+      ?>
       <div>
-          <img class="article-thumbnail" src="<?php /*CALL ARTICLE THUMBNAIL HERE*/ echo IMAGES_URL . '/placeholder.png' ?>">
-          <h4>CALL ARTICLE TITLE HERE</h4>
-          <p>Call preview of article here. Lorem ipsum dolor sit, amet consectetur alea jacata est audis aman et confedere sum...</p>
-      </div> 
-      <div>
-          <img class="article-thumbnail" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-          <h4>CALL ARTICLE TITLE HERE</h4>
-          <p>Call preview of article here. Lorem ipsum dolor sit, amet consectetur alea jacata est audis aman et confedere sum...</p>
-      </div> 
-      <div>
-          <img class="article-thumbnail" src="<?php echo IMAGES_URL . '/placeholder.png' ?>">
-          <h4>CALL ARTICLE TITLE HERE</h4>
-          <p>Call preview of article here. Lorem ipsum dolor sit, amet consectetur alea jacata est audis aman et confedere sum...</p>
-      </div> 
-        
+          <?php the_post_thumbnail( 'article-preview_thumb', array(
+            'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
+          <h4><?php the_title() ?></h4>
+          <p><?php the_field('accroche') ?></p>
+      </div>
+      <?php
+          }
+
+        }
+        else{
+          echo __( "No articles :'(", 'themeclimat' );
+        }
+        wp_reset_postdata();
+      ?>
     </div> 
   </div>    
   <div>
@@ -46,7 +54,7 @@
       ?>
       <div>
         <a href="<?php the_field('lien_don') ?>">
-          <?php the_post_thumbnail( 'ong-thumb', array(
+          <?php the_post_thumbnail( 'ong_thumb', array(
             'class' => "ong-logo",'alt' => get_the_title() ) ); ?>
           <p><?php the_title() ?><p>
         </a>
