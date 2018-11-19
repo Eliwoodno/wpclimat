@@ -38,7 +38,7 @@ function add_custom_post_type_ong()
         'rewrite'             => array( 'slug' => $post_type )
     );
 
-    register_post_type($post_type, $args );
+    register_post_type($post_type, $args);
 
     $taxonomy = "geo-zone";
     $object_type = array("ong");
