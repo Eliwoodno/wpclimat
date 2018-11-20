@@ -58,14 +58,7 @@ main.front-page .map-container{
     background-color: #D8D8D8;
     margin: 20px auto; 
 }
-main.front-page .map-container::before{
-    content: 'MAP';
-    display: block;
-    text-align: center;
-    top: 50%;
-    position: relative;
-    height: 100%;
-}
+
 
 main.front-page h1{
     text-align: center;
@@ -148,7 +141,8 @@ header .sub-menu{
 
 header .sub-menu li{
   padding: 20px 5px;
-  border-bottom:1px solid rgba(0,0,0,0.15);   
+  border-bottom:1px solid rgba(0,0,0,0.15);  
+  z-index:10000; 
   
 }
 
