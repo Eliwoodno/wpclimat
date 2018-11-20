@@ -40,6 +40,17 @@ function add_custom_post_type_ong()
 
     register_post_type($post_type, $args);
 
+    // Continent Taxonomy
+    $taxonomy = "continent";
+    $object_type = array("ong");
+    $args = array(
+            'label' => __( 'Continent' ),
+            'rewrite' => array( 'slug' => 'continent' ),
+            'hierarchical' => true,
+    );
+    register_taxonomy( $taxonomy, $object_type, $args );
+
+    // Geographic zone Taxonomy
     $taxonomy = "geo-zone";
     $object_type = array("ong");
     $args = array(
