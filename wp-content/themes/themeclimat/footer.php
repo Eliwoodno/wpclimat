@@ -1,6 +1,6 @@
 <!-- Execution de la fonction wp_footer() obligatoire ! -->
 <?php wp_footer();  ?>
-<div class="footer_main">
+<footer>
   <ul class="footer_list">
     <li><p><a href="#" title="meme">Accueil</a></p>
         <ul>
@@ -38,6 +38,6 @@
          
   </ul>
   <p>Mentions légales - &#169 2018</p>
-</div>  
+</footer>  
 </body>
 </html>

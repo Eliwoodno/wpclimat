@@ -15,6 +15,7 @@
     </head>
     <body <?php body_class(); ?>>
         <header>
+            <img class="logo-underthemap"src="<?php echo IMAGES_URL . '/logo_underthemap.png' ?>">
             <?php
                 $args=array(
                     'theme_location' => 'header',

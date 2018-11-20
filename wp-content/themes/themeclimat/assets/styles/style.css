@@ -1,12 +1,16 @@
 *{
     margin:0;
     padding: 0;
-    text-decoration: none;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration:none;
+    color:#747577;
+}
+
 /*//////////////////////  FRONT-PAGE /////////////////////////////*/
 main.front-page{
     color:#747577;
@@ -27,6 +31,9 @@ main.front-page > div:nth-child(3) > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+main.front-page > div:nth-child(3) > div a {
+    display: block;
 }
 main.front-page > div:nth-child(2) >div{
     display: flex;
@@ -85,17 +92,72 @@ main.front-page .ong-logo{
 main.front-page .ong-logo + p{
     text-align: center;
     width:150px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 } 
 
 
 
 
 /*//////////////////////  HEADER /////////////////////////////*/
+header{
+    height: 100px;
+    position: relative;
+    box-shadow: 0px 2px 2px -2px rgba(0,0,0,0.15);
+    position: sticky;
+    top:30px;
+    background-color:white;
+    display: flex;
+    justify-content: flex-start; 
+}
+header .menu-header-container{
+    height:inherit;
+    width: 100%;
 
+}
+header .menu-header {
+    display: flex;
+    list-style: none;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1.97px;
+}
 
+header .menu-header a{
+    color:black !important;
+}
+header .menu-header-container li{
+    position: relative;
+}
 
+.logo-underthemap{
+    height:80px;
+    margin: 10px;
+    margin-left: 20px;
+}
 
+header .sub-menu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: 150%;
+
+}
+
+header .sub-menu li{
+  padding: 20px 5px;
+  border-bottom:1px solid rgba(0,0,0,0.15);   
+  
+}
+
+header .menu-header-container li:hover > ul{
+    display: block;
+}
+header .menu-header-container li > ul > li:hover{
+    background-color:red;
+}
 
 
 
@@ -108,20 +170,20 @@ main.front-page .ong-logo + p{
 
 
 /*//////////////////////  FOOTER /////////////////////////////*/
-.footer_main{
+footer{
     background-color: #010101;
     color: white;
     list-style: none;
     font-weight: 100;
     padding: 40px 40px 10px 40px;
 }
-.footer_main a{
+footer a{
     color:inherit;
 }
-.footer_main a:hover{
+footer a:hover{
     color:lightgrey;
 }
-.footer_main ul{
+footer ul{
     list-style-type: none;
 } 
 .footer_list{
@@ -133,7 +195,7 @@ main.front-page .ong-logo + p{
     width:50px;
     height: 50px;
 }
-.footer_main > p{
+footer > p{
     text-align : center;
     font-size : 12px;
 }
@@ -214,3 +276,5 @@ main.front-page .ong-logo + p{
         justify-content: space-evenly !important;
     }
   }
+
+ 
