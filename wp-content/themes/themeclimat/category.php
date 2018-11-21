@@ -1,13 +1,11 @@
 <?php get_header() ?>
+<main class="category-page">
 <h1><?php echo(get_queried_object()->name) ?></h1>
 
-<?php var_dump(get_queried_object()) ?>
-
-<div>
+  <div class="article-list">
       <?php
           $args =  array(
             'cat' => get_queried_object()->term_id,
-            'posts_per_page' => 3
           );
           $the_query = new WP_Query( $args );
           if($the_query-> have_posts())
@@ -31,6 +29,9 @@
         }
         wp_reset_postdata();
       ?>
-</div> 
+      <div class="style:order2; visibilty:none;"></div>
+      
+  </div> 
+</main>
 
 <?php get_footer() ?>

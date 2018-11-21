@@ -12,7 +12,7 @@ a{
 }
 
 /*//////////////////////  FRONT-PAGE /////////////////////////////*/
-main.front-page{
+main{
     color:#747577;
 }
 main.front-page > div p{
@@ -30,7 +30,10 @@ main.front-page > div:nth-child(3){
 main.front-page > div:nth-child(3) > div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+main.front-page > div:nth-child(3) > div >div {
+    margin: 10px auto;
 }
 main.front-page > div:nth-child(3) > div a {
     display: block;
@@ -39,18 +42,15 @@ main.front-page > div:nth-child(2) >div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 main.front-page > div:nth-child(2) >div >div{
-    margin-bottom: 20px;  
     width:250px;
-    margin-right:10px;
+    margin: 10px 0px;
 }
 main.front-page > div:nth-child(2) >div >div p{
     text-align: left;
     line-height: 24px;
-    letter-spacing: 1px;
-    
-
 }
 main.front-page .map-container{
     height: 500px;
@@ -71,7 +71,7 @@ main.front-page h3{
 main.front-page .article-thumbnail{
     width:250px;
 }
-main.front-page h4{
+main h4{
     margin-bottom: 5px;
     margin-top: 10px;
 }
@@ -88,7 +88,28 @@ main.front-page .ong-logo + p{
     padding-bottom: 20px;
 } 
 
-
+/*//////////////////////  CATEGORY-CONTINENTS /////////////////*/
+main.category-page{
+    margin:  20px 7.5%;
+} 
+main.category-page h1{
+    margin-bottom:  30px ;
+} 
+.article-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+    
+ }
+ .article-list > div{
+    width: 250px;  
+    margin: 10px 0px;
+ }
+ .article-list > div > p{
+    width: 250px;  
+    line-height: 24px;
+ }
+ 
 
 
 /*//////////////////////  HEADER /////////////////////////////*/
@@ -97,7 +118,7 @@ header{
     position: relative;
     box-shadow: 0px 2px 2px -2px rgba(0,0,0,0.15);
     position: sticky;
-    top:30px;
+    top:0px;
     background-color:white;
     display: flex;
     justify-content: flex-start; 
@@ -117,11 +138,27 @@ header .menu-header {
     letter-spacing: 1.97px;
 }
 
-header .menu-header a{
+header .menu-header  a{
     color:black !important;
 }
 header .menu-header-container li{
     position: relative;
+}
+header .menu-header > li > a{
+    padding: 5px;
+}
+header .menu-header > li > a::before  {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    left: 0;
+    border-top: 2px solid #00D6A7;
+    transition: width 0.2s ease-in;
+}
+header .menu-header > li > a:hover:before {
+    width: 40px;
 }
 
 .logo-underthemap{
@@ -131,27 +168,49 @@ header .menu-header-container li{
 }
 
 header .sub-menu{
-    display: none;
     position: absolute;
     list-style: none;
     background-color: white;
-    width: 150%;
+    width: 200%;
+    left:0px;
+    top:20px;
+    z-index:1;
 
 }
 
 header .sub-menu li{
-  padding: 20px 5px;
-  border-bottom:1px solid rgba(0,0,0,0.15);  
-  z-index:10000; 
-  
+    
+    overflow:hidden;
+    max-height:0;
+    border-bottom:1px solid transparent; 
+    transition:max-height 500ms ease; 
 }
 
-header .menu-header-container li:hover > ul{
+header .sub-menu li a{
+    padding: 20px 5px;
     display: block;
 }
-header .menu-header-container li > ul > li:hover{
-    background-color:red;
+header .sub-menu li a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 0px;
+    left: 5px;
+    border-top: 2px solid #00D6A7;
+    transition: width 0.2s ease-in-out;
 }
+header .sub-menu li a:hover:before {
+    width: 40px;
+}
+
+header .menu-header-container li:hover > ul li{
+    
+    max-height:150px;
+    border-bottom:1px solid rgba(0,0,0,0.15); 
+    
+}
+
 
 
 

@@ -14,7 +14,15 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+    
         <header>
+        <?php if ( is_admin_bar_showing() ) { ?>
+          <style>
+            header {
+                     top: 32px;
+                   }
+          </style>
+         <?php } ?>
             <img class="logo-underthemap"src="<?php echo IMAGES_URL . '/logo_underthemap.png' ?>">
             <?php
                 $args=array(

@@ -34,7 +34,10 @@
           echo __( "No articles :'(", 'themeclimat' );
         }
         wp_reset_postdata();
+
       ?>
+      <div class="style:order2; visibilty:none;"></div>
+      
     </div> 
   </div>    
   <div>
@@ -68,6 +71,7 @@
         }
         wp_reset_postdata();
       ?>
+      
     </div>    
          
   </div>       
