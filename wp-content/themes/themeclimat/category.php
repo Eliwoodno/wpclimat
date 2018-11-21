@@ -15,10 +15,12 @@
               $the_query-> the_post();
       ?>
       <div>
-          <?php the_post_thumbnail( 'article-preview_thumb', array(
-            'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
-          <h4><?php the_title() ?></h4>
-          <p><?php the_field('accroche') ?></p>
+          <a href="<?php the_permalink() ?>">
+            <?php the_post_thumbnail( 'article-preview_thumb', array(
+              'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
+            <h4><?php the_title() ?></h4>
+            <p><?php the_field('accroche') ?></p>
+          </a>
       </div>
       <?php
           }
