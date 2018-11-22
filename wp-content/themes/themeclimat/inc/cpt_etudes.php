@@ -39,4 +39,14 @@ function add_custom_post_type_etude()
     );
 
     register_post_type($post_type, $args );
+
+    //Continent Taxonomy
+    $taxonomy = "continent_etudes";
+    $object_type = array("etudes");
+    $args = array(
+            'label' => __( 'Continent' ),
+            'rewrite' => array( 'slug' => 'continent_etudes' ),
+            'hierarchical' => true,
+    );
+    register_taxonomy( $taxonomy, $object_type, $args );
 }

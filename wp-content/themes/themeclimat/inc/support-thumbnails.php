@@ -4,5 +4,6 @@ function thumbnails_theme_support(){
 
     add_image_size( 'ong_thumb', 150, 150, false );
     add_image_size( 'article-preview_thumb', 250, 250, true );
+    add_image_size( 'etude-preview_thumb', 400, 300, true );
 }
 add_action( 'after_setup_theme', 'thumbnails_theme_support' );
