@@ -22,10 +22,10 @@ main.front-page > div:nth-child(1){
     margin: 20px 15% 40px 15%;
 }
 main.front-page > div:nth-child(2){
-    margin:  0px 7.5%;
+    margin:  0px 10%;
 }
 main.front-page > div:nth-child(3){
-    margin:  20px 7.5%;
+    margin:  20px 10%;
 }
 main.front-page > div:nth-child(3) > div {
     display: flex;
@@ -90,7 +90,7 @@ main.front-page .ong-logo + p{
 
 /*//////////////////////  CATEGORY-CONTINENTS /////////////////*/
 main.category-page{
-    margin:  20px 7.5%;
+    margin:  20px 10%;
 } 
 main.category-page h1{
     margin-bottom:  30px ;
@@ -153,7 +153,7 @@ header .menu-header > li > a::before  {
     position: absolute;
     bottom: -5px;
     width: 0px;
-    left: 0;
+    left: 5px;
     border-top: 2px solid #00D6A7;
     transition: width 0.2s ease-in;
 }
@@ -190,7 +190,7 @@ header .sub-menu li a{
     padding: 20px 5px;
     display: block;
 }
-header .sub-menu li a::before{
+header .sub-menu li a::before {
     content: '';
     display: block;
     position: absolute;
@@ -200,7 +200,27 @@ header .sub-menu li a::before{
     border-top: 2px solid #00D6A7;
     transition: width 0.2s ease-in-out;
 }
-header .sub-menu li a:hover:before {
+#responsive-menu-container a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 0px;
+    left: 5%;
+    border-top: 2px solid #00D6A7;
+    transition: width 0.2s ease-in-out;
+}
+#responsive-menu-container ul li ul li a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    width: 0px;
+    left: 10%;
+    border-top: 2px solid #00D6A7;
+    transition: width 0.2s ease-in-out;
+}
+header .sub-menu li a:hover:before, #responsive-menu-container a:hover:before {
     width: 40px;
 }
 
@@ -209,6 +229,21 @@ header .menu-header-container li:hover > ul li{
     max-height:150px;
     border-bottom:1px solid rgba(0,0,0,0.15); 
     
+}
+#responsive-menu-container{
+    text-transform: uppercase;
+    letter-spacing: 1.97px;
+    box-shadow: 2px 0 4px -2px rgba(0,0,0,0.15);
+    z-index: 5000 !important;
+}
+.menu-item a{
+    cursor: pointer;
+}
+#responsive-menu-button.is-active{
+    display: none;
+}
+#responsive-menu-button{
+    z-index:1 !important;
 }
 
 
@@ -327,6 +362,9 @@ footer > p{
     }
     main.front-page > div:nth-child(3) >div{
         justify-content: space-evenly !important;
+    }
+    .logo-underthemap {
+        margin: auto;
     }
   }
 

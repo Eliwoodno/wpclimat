@@ -21,6 +21,9 @@
             header {
                      top: 32px;
                    }
+            #responsive-menu-container{
+                     top:32px;
+            }       
           </style>
          <?php } ?>
             <img class="logo-underthemap"src="<?php echo IMAGES_URL . '/logo_underthemap.png' ?>">
