@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 a{
     text-decoration:none;
@@ -105,8 +106,7 @@ main.category-page h1{
     width: 250px;  
     margin: 10px 0px;
  }
- .article-list > div > p{
-    width: 250px;  
+ .article-list > div > a > p{
     line-height: 24px;
  }
  
@@ -245,9 +245,17 @@ header .menu-header-container li:hover > ul li{
 #responsive-menu-button{
     z-index:1 !important;
 }
-
-
-
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #747577;
+    opacity: 0.4;
+    z-index:2;
+    display: none;
+}
 
 
 
@@ -363,9 +371,14 @@ footer > p{
     main.front-page > div:nth-child(3) >div{
         justify-content: space-evenly !important;
     }
+    main.front-page > div:nth-child(2) >div > div{
+        margin-right: 10px;
+        margin-left:10px;
+    }
     .logo-underthemap {
         margin: auto;
     }
+
   }
 
  

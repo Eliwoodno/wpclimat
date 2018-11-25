@@ -3,7 +3,7 @@
 <h1><?php echo(get_queried_object()->name) ?></h1>
 
   <!-- Etudes -->
-  <div>
+  <div class="etudes-list">
       <?php
         $args = array(
             'post_type'         => 'etudes',
@@ -25,10 +25,14 @@
       ?>
       <div>
           <a href="<?php the_permalink() ?>">
-            <?php the_post_thumbnail( 'etude-preview_thumb', array(
+            <div>
+              <?php the_post_thumbnail( 'etude-preview_thumb', array(
               'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
-            <h4><?php the_title() ?></h4>
-            <p><?php the_field('accroche') ?></p>
+            </div>
+            <div>    
+              <h4><?php the_title() ?></h4>
+              <p><?php the_field('accroche') ?></p>
+            </div>  
           </a>
       </div>
       <?php

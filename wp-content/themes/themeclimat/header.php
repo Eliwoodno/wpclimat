@@ -9,11 +9,12 @@
         <!--
             Tout le contenu de la partie head de mon site
          -->
-
+        
         <!-- Execution de la fonction wp_head() obligatoire ! -->
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+      <div class="overlay"></div>
     
         <header>
         <?php if ( is_admin_bar_showing() ) { ?>
@@ -23,7 +24,10 @@
                    }
             #responsive-menu-container{
                      top:32px;
-            }       
+            }     
+            #responsive-menu-button{
+                     top:50px !important;
+            }         
           </style>
          <?php } ?>
             <img class="logo-underthemap"src="<?php echo IMAGES_URL . '/logo_underthemap.png' ?>">
