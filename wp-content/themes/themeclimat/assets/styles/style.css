@@ -75,6 +75,7 @@ main.front-page .article-thumbnail{
 main h4{
     margin-bottom: 5px;
     margin-top: 10px;
+    color: rgb(59, 59, 59);
 }
 
 main.front-page .ong-logo{
@@ -109,7 +110,16 @@ main.category-page h1{
  .article-list > div > a > p{
     line-height: 24px;
  }
- 
+ main .etudes-list > div {
+    border: 2px solid #00D6A7;
+}
+ main .etudes-list a {
+     display: flex;
+     
+ }
+ main .etudes-list a h4 {
+      margin: 0px 0px 20px 0px;
+ }
 
 
 /*//////////////////////  HEADER /////////////////////////////*/
