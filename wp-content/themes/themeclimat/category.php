@@ -29,11 +29,14 @@
               <?php the_post_thumbnail( 'etude-preview_thumb', array(
               'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
             </div>
-            <div>    
-              <h4><?php the_title() ?></h4>
+          </a> 
+            <div> 
+              <a href="<?php the_permalink() ?>">   
+                <h4><?php the_title() ?></h4>
+              </a>  
               <p><?php the_field('accroche') ?></p>
             </div>  
-          </a>
+          
       </div>
       <?php
           }

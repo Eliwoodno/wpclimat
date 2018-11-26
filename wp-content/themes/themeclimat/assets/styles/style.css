@@ -113,10 +113,15 @@ main.category-page h1{
  main .etudes-list > div {
     border: 2px solid #00D6A7;
 }
- main .etudes-list a {
+ main .etudes-list > div {
      display: flex;
+     padding: 10px;
      
  }
+ main .etudes-list img {
+    margin-right:10px;
+    
+}
  main .etudes-list a h4 {
       margin: 0px 0px 20px 0px;
  }
