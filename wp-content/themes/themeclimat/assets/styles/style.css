@@ -103,6 +103,7 @@ main .etudes-list {
 }
 main .etudes-list h3 {
     margin-bottom: 20px;
+    margin-top: 0px;
 }
 .article-list{
     display: flex;
@@ -389,7 +390,7 @@ footer > p{
 /*/////////////////////////// MEDIA QUERIES //////////////////////////////*/
 
 @media screen and (max-width: 992px) {
-    main.front-page > div:nth-child(2) >div{
+    main.front-page > div:nth-child(2) >div, main.category-page .article-list{
         justify-content: space-evenly !important;
     }
     main.front-page > div:nth-child(3) >div{
@@ -405,4 +406,13 @@ footer > p{
 
   }
 
- 
+  @media screen and (max-width: 776px) {
+    main .etudes-list > div {
+        flex-wrap: wrap;
+    }
+    main .etudes-list img {
+        margin-right:0px;
+        
+    }
+
+  }
