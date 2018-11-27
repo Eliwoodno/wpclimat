@@ -13,18 +13,25 @@
 
   <?php endwhile; ?>
   <?php endif; ?>
-   <div class="associated-ongs">
+   
    <?php
     $ongs = get_field('ongs');
     foreach($ongs as $ong){
         $ong_name = $ong->post_title;
         $ong_link = get_field('lien_don', $ong->ID);
         $ong_thumb = get_the_post_thumbnail( $ong->ID, 'ong_thumb' );
-        echo $ong_name;
-        echo $ong_thumb;
-        echo $ong_link;
+        
+        
+        
     }
   ?>
+     <div class="associated-ongs">
+        <a href="<?php echo $ong_link; ?>">
+          <?php the_post_thumbnail( '$ong_thumb', array(
+            'class' => "ong-logo",'alt' => get_the_title() ) ); ?>
+          <p><?php echo $ong_name; ?><p>
+        </a>
     </div>
+    
 </main>
 <?php get_footer() ?>
