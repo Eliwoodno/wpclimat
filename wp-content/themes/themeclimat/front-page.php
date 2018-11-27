@@ -11,7 +11,7 @@
     <div>
       <?php
           $args =  array(
-            'posts_per_page' => 3
+            'posts_per_page' => 4
           );
           $the_query = new WP_Query( $args );
           if($the_query-> have_posts())
