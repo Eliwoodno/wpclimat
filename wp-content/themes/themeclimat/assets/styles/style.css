@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 a{
     text-decoration:none;
@@ -71,9 +72,10 @@ main.front-page h3{
 main.front-page .article-thumbnail{
     width:250px;
 }
-main h4{
+main h4,h3{
     margin-bottom: 5px;
     margin-top: 10px;
+    color: rgb(59, 59, 59);
 }
 
 main.front-page .ong-logo{
@@ -94,7 +96,15 @@ main.category-page{
 } 
 main.category-page h1{
     margin-bottom:  30px ;
+
 } 
+main .etudes-list {
+    margin-bottom: 50px;
+}
+main .etudes-list h3 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
 .article-list{
     display: flex;
     flex-wrap: wrap;
@@ -105,11 +115,51 @@ main.category-page h1{
     width: 250px;  
     margin: 10px 0px;
  }
- .article-list > div > p{
-    width: 250px;  
+ .article-list > div > a > p{
     line-height: 24px;
  }
- 
+ main .etudes-list > div {
+    border: 2px solid #00D6A7;
+}
+ main .etudes-list > div {
+     display: flex;
+     padding: 20px;
+ }
+ main .etudes-list .image-link {
+    height:300px;
+}
+ main .etudes-list img {
+    margin-right:10px;
+    
+}
+ main .etudes-list a h4 {
+      margin: 0px 0px 20px 0px;
+ }
+
+/*//////////////////////  Single /////////////////////////////*/
+main.single-page .content,main.single-page .title{
+    font-family: 'PT Serif', serif;
+    margin: auto;
+    max-width: 740px;
+    color: black;
+}
+main.single-page .title{
+    font-size: 38px;
+    line-height: 40px; 
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+main.single-page .content{
+   line-height: 40px;
+   font-size: 18px;
+}
+main.single-page .thumbnail img{
+    max-width:100%;
+    margin:auto;
+    display: block ;
+ }
+
+
 
 
 /*//////////////////////  HEADER /////////////////////////////*/
@@ -245,9 +295,17 @@ header .menu-header-container li:hover > ul li{
 #responsive-menu-button{
     z-index:1 !important;
 }
-
-
-
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #747577;
+    opacity: 0.4;
+    z-index:2;
+    display: none;
+}
 
 
 
@@ -276,6 +334,7 @@ footer ul{
 } 
 .footer_list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom:40px;
 }
@@ -357,15 +416,56 @@ footer > p{
 /*/////////////////////////// MEDIA QUERIES //////////////////////////////*/
 
 @media screen and (max-width: 992px) {
-    main.front-page > div:nth-child(2) >div{
+    main.front-page > div:nth-child(2) >div, main.category-page .article-list{
         justify-content: space-evenly !important;
     }
     main.front-page > div:nth-child(3) >div{
         justify-content: space-evenly !important;
     }
+    main.front-page > div:nth-child(2) >div > div, main.category-page .article-list >div {
+        margin-right: 10px;
+        margin-left:10px;
+    }
     .logo-underthemap {
         margin: auto;
     }
+
   }
 
- 
+  @media screen and (max-width: 776px) {
+    main .etudes-list > div {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    main .etudes-list .image-link {
+        margin:auto;
+    }
+    main .etudes-list .image-link > div{
+        margin-left: -2px;
+    }
+    main .etudes-list > div > div:nth-child(2) {
+        width:350px;
+        margin: auto;
+    }
+    main .etudes-list h3 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    main .etudes-list img {
+        margin-right:0px;
+        width: 350px;
+        
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    main .etudes-list > div > div:nth-child(2) {
+        width:300px;
+        
+      }
+      main .etudes-list img {
+        width: 300px;
+        
+    }
+    }
