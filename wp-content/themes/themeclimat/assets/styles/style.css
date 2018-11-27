@@ -186,10 +186,12 @@ main.single-page .thumbnail img{
 .associated-ongs{
     max-width: 740px;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 40px;
 } 
+.associated-ongs > div{
+    display: flex;
+    justify-content: space-around;
+}    
 .associated-ongs > div > .ong-logo{
     margin-bottom: 20px;
 }
