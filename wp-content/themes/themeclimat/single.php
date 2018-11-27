@@ -13,11 +13,12 @@
 
   <?php endwhile; ?>
   <?php endif; ?>
-   
+  
+  <div class="associated-ongs">
    <?php
     $ongs = get_field('ongs');
     foreach($ongs as $ong): ?>
-        <div class="associated-ongs">
+        <div>
           <a href="<?php echo get_field('lien_don', $ong->ID); ?>">
             <?php echo get_the_post_thumbnail( $ong->ID, 'ong_thumb', array('class' => "ong-logo") ); ?>
           <p><?php echo $ong->post_title; ?><p>
@@ -25,7 +26,7 @@
         </div>
         
      <?php  endforeach; ?>   
-    
+   </div> 
 
      
     
