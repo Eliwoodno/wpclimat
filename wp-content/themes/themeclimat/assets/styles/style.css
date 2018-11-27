@@ -136,6 +136,29 @@ main .etudes-list h3 {
       margin: 0px 0px 20px 0px;
  }
 
+/*//////////////////////  Single /////////////////////////////*/
+main.single-page .content,main.single-page .title{
+    font-family: 'PT Serif', serif;
+    margin: auto;
+    max-width: 740px;
+    color: black;
+}
+main.single-page .title{
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+main.single-page .content{
+   line-height: 40px;
+   font-size: 18px;
+}
+main.single-page .thumbnail{
+    width: 100%;
+    margin:auto;
+ }
+
+
+
 
 /*//////////////////////  HEADER /////////////////////////////*/
 header{
@@ -309,6 +332,7 @@ footer ul{
 } 
 .footer_list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom:40px;
 }
@@ -414,7 +438,7 @@ footer > p{
         margin:auto;
     }
     main .etudes-list .image-link > div{
-        margin-left: -4px;
+        margin-left: -2px;
     }
     main .etudes-list > div > div:nth-child(2) {
         width:350px;

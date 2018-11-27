@@ -5,6 +5,9 @@ function ajout_scripts() {
 wp_register_style( 'google_font', 'https://fonts.googleapis.com/css?family=Roboto' );
 wp_enqueue_style( 'google_font' );
 
+wp_register_style( 'google_font', 'https://fonts.googleapis.com/css?family=PT+Serif' );
+wp_enqueue_style( 'google_font' );
+
 wp_register_style( 'font_awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' );
 wp_enqueue_style( 'font_awesome' );
 
