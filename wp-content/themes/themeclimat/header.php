@@ -34,7 +34,7 @@
             }         
           </style>
          <?php } ?>
-            <img class="logo-underthemap"src="<?php echo IMAGES_URL . '/logo_underthemap.png' ?>">
+            <a class="logo-underthemap" href="<?php echo get_home_url()?>"><img src="<?php echo IMAGES_URL . '/logo_underthemap.png' ?>"></a>
             <?php
                 $args=array(
                     'theme_location' => 'header',

@@ -216,6 +216,9 @@ header .menu-header > li > a:hover:before {
     margin: 10px;
     margin-left: 20px;
 }
+.logo-underthemap > img{
+    height:80px;
+}
 
 header .sub-menu{
     position: absolute;
