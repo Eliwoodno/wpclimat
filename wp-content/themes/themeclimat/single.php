@@ -15,6 +15,7 @@
   <?php endif; ?>
   
   <div class="associated-ongs">
+  <h3>Ces associations agissent pour cette cause.</h3>  
    <?php
     $ongs = get_field('ongs');
     foreach($ongs as $ong): ?>

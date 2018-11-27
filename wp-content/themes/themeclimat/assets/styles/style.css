@@ -157,8 +157,20 @@ main.single-page .thumbnail img{
     max-width:100%;
     margin:auto;
     display: block ;
+    margin-top: 40px;
  }
-
+.associated-ongs{
+    max-width: 740px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+} 
+.associated-ongs{
+text-align: center;
+width: 150px;
+padding-bottom: 20px;
+}
 
 
 
