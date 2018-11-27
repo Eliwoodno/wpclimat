@@ -21,7 +21,7 @@ function scrollToAnchor(name){
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
-$(".link-to-anchor").click(function() {
+$(".link-to-ongs").click(function() {
     scrollToAnchor('anchor-ong');
  });
  
