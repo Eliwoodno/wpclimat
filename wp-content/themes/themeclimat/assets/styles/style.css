@@ -410,8 +410,16 @@ footer > p{
     main .etudes-list > div {
         flex-wrap: wrap;
     }
+    main .etudes-list > div:nth-child(2) {
+        width:350px;
+    }
+    main .etudes-list h3 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
     main .etudes-list img {
         margin-right:0px;
+        width: 350px;
         
     }
 
