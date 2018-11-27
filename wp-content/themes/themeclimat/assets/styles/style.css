@@ -145,15 +145,16 @@ main.single-page .content,main.single-page .title{
 }
 main.single-page .title{
     font-size: 38px;
-    line-height: 40px;
-    margin-bottom: 80px;
+    line-height: 40px; 
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 main.single-page .content{
    line-height: 40px;
    font-size: 18px;
 }
-main.single-page .thumbnail{
-    width: 100%;
+main.single-page .thumbnail img{
+    max-width:100%;
     margin:auto;
  }
 

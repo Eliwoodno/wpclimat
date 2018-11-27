@@ -4,9 +4,9 @@
    <div class="thumbnail">
      <?php the_post_thumbnail();?>
    </div>
-   <div class="title">
+   <h2 class="title">
      <?php the_title(); ?>
-   </div>
+   </h2>
    <div class="content">
      <?php the_content(); ?>
    </div>
