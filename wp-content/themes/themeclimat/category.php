@@ -24,7 +24,7 @@
             $the_query-> the_post();
       ?>
       <div>
-          <a href="<?php the_permalink() ?>">
+          <a class="image-link" href="<?php the_permalink() ?>">
             <div>
               <?php the_post_thumbnail( 'etude-preview_thumb', array(
               'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
