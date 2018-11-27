@@ -6,6 +6,7 @@ define( 'THEME_URL' ,           get_template_directory_uri()        );
 define( 'CSS_URL' ,             THEME_URL .    '/assets/styles'       );
 define( 'IMAGES_URL' ,          THEME_URL .    '/assets/images'       );
 define( 'JS_URL' ,              THEME_URL .    '/assets/scripts'      );
+define( 'FONTS_URL' ,           THEME_URL .    '/assets/fonts'      );
 define( 'FAVICONS_URL' ,        THEME_URL .    '/assets/favicon'      );
 define( 'ADMIN_IMAGES_URL' ,    IMAGES_URL .   '/admin'             );
 

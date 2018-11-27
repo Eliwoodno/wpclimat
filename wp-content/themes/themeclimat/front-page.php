@@ -20,7 +20,7 @@
             {
               $the_query-> the_post();
       ?>
-      <div>
+      <div class="featured-article">
         <a href="<?php the_permalink() ?>">
           <?php the_post_thumbnail( 'article-preview_thumb', array(
             'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
