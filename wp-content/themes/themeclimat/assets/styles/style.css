@@ -396,7 +396,7 @@ footer > p{
     main.front-page > div:nth-child(3) >div{
         justify-content: space-evenly !important;
     }
-    main.front-page > div:nth-child(2) >div > div{
+    main.front-page > div:nth-child(2) >div > div, main.category-page .article-list >div {
         margin-right: 10px;
         margin-left:10px;
     }
@@ -413,6 +413,9 @@ footer > p{
     main .etudes-list .image-link {
         margin:auto;
     }
+    main .etudes-list .image-link > div{
+        margin-left: -4px;
+    }
     main .etudes-list > div > div:nth-child(2) {
         width:350px;
         margin: auto;
@@ -428,3 +431,14 @@ footer > p{
     }
 
   }
+
+  @media screen and (max-width: 500px) {
+    main .etudes-list > div > div:nth-child(2) {
+        width:300px;
+        
+      }
+      main .etudes-list img {
+        width: 300px;
+        
+    }
+    }
