@@ -14,3 +14,14 @@ $(window).on('resize', () => {
     $('.overlay').hide()
     }
 })
+
+
+function scrollToAnchor(name){
+    var aTag = $("a[name='"+ name +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$(".link-to-anchor").click(function() {
+    scrollToAnchor('anchor-ong');
+ });
+ 

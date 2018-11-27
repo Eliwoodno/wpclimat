@@ -213,6 +213,7 @@ header{
     background-color:white;
     display: flex;
     justify-content: flex-start; 
+    z-index: 1000;
 }
 header .menu-header-container{
     height:inherit;
