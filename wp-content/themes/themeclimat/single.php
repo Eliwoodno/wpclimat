@@ -20,17 +20,18 @@
         $ong_name = $ong->post_title;
         $ong_link = get_field('lien_don', $ong->ID);
         $ong_thumb = get_the_post_thumbnail( $ong->ID, 'ong_thumb', array('class' => "ong-logo") );
-        
-        
-        
-    }
-  ?>
-     <div class="associated-ongs">
+        ?>
+        <div class="associated-ongs">
         <a href="<?php echo $ong_link; ?>">
           <?php echo $ong_thumb; ?>
           <p><?php echo $ong_name; ?><p>
         </a>
     </div>
+        
+    <?php    
+    }
+  ?>
+     
     
 </main>
 <?php get_footer() ?>
