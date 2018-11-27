@@ -17,7 +17,7 @@ $(window).on('resize', () => {
 
 
 function scrollToAnchor(name){
-    var aTag = $("a[name='"+ name +"']");
+    let aTag = $("div[name='"+ name +"']");
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
