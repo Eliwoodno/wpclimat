@@ -2,7 +2,7 @@
 
 function ajout_scripts() {
 
-wp_register_style( 'google_font', 'https://fonts.googleapis.com/css?family=Roboto' );
+wp_register_style( 'google_font', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700"' );
 wp_enqueue_style( 'google_font' );
 
 wp_register_style( 'google_font', 'https://fonts.googleapis.com/css?family=PT+Serif' );

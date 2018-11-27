@@ -52,6 +52,8 @@ main.front-page > div:nth-child(2) >div >div{
 main.front-page > div:nth-child(2) >div >div p{
     text-align: left;
     line-height: 24px;
+    font-size: 14px;
+    color: black;
 }
 main.front-page .map-container{
     height: 500px;
@@ -75,7 +77,8 @@ main.front-page .article-thumbnail{
 main h4,h3{
     margin-bottom: 5px;
     margin-top: 10px;
-    color: rgb(59, 59, 59);
+    color:black;
+    font-weight: bold;
 }
 
 main.front-page .ong-logo{
