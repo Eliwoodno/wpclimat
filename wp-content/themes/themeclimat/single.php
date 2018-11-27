@@ -15,21 +15,20 @@
   <?php endif; ?>
   
   <div class="associated-ongs">
-  <h3>Ces associations agissent pour cette cause.</h3>  
-   <?php
-    $ongs = get_field('ongs');
-    foreach($ongs as $ong): ?>
+    <h3>Ces associations agissent pour cette cause.</h3>  
+    <div>  
+    <?php
+      $ongs = get_field('ongs');
+      foreach($ongs as $ong): ?>
         <div>
           <a href="<?php echo get_field('lien_don', $ong->ID); ?>">
             <?php echo get_the_post_thumbnail( $ong->ID, 'ong_thumb', array('class' => "ong-logo") ); ?>
           <p><?php echo $ong->post_title; ?><p>
-        </a>
+          </a>
         </div>
-        
-     <?php  endforeach; ?>   
+     <?php  endforeach; ?>  
+     </div>   
    </div> 
 
-     
-    
 </main>
 <?php get_footer() ?>

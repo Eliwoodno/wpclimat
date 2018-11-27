@@ -104,7 +104,7 @@ main h4,h3{
 
 main.front-page .ong-logo{
     margin-bottom: 20px;
-    margin-right:10px;
+    
 }
 main.front-page .ong-logo + p{
     text-align: center;
@@ -190,11 +190,12 @@ main.single-page .thumbnail img{
     justify-content: space-around;
     margin-bottom: 40px;
 } 
-.associated-ongs > .ong-logo{
-text-align: center;
-width: 150px;
-padding-bottom: 20px;
+.associated-ongs > div > .ong-logo{
+    margin-bottom: 20px;
 }
+.associated-ongs > div > p{
+    text-align: center;
+    }
 
 
 
