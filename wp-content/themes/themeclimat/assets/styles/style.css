@@ -123,7 +123,7 @@ main .etudes-list h3 {
 }
  main .etudes-list > div {
      display: flex;
-     padding: 10px;
+     padding: 20px;
  }
  main .etudes-list .image-link {
     height:300px;
@@ -156,6 +156,7 @@ main.single-page .content{
 main.single-page .thumbnail img{
     max-width:100%;
     margin:auto;
+    display: block ;
  }
 
 
@@ -434,6 +435,7 @@ footer > p{
   @media screen and (max-width: 776px) {
     main .etudes-list > div {
         flex-wrap: wrap;
+        padding: 10px;
     }
     main .etudes-list .image-link {
         margin:auto;
