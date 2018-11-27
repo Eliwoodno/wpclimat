@@ -42,7 +42,7 @@
       
     </div> 
   </div>    
-  <div name='anchor-ong'>
+  <div name='anchor-ong' id='anchor-ong'>
     <h3>ASSOCIATIONS PARTENAIRES</h3>
     <div>
       <?php

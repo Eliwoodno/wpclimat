@@ -18,10 +18,19 @@ $(window).on('resize', () => {
 
 function scrollToAnchor(name){
     let aTag = $("div[name='"+ name +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    $('html,body').animate({scrollTop: aTag.offset().top - 200},'slow');
+}
+
+$.fn.exists = function () {
+    return this.length !== 0;
 }
 
 $(".link-to-ongs").click(function() {
-    scrollToAnchor('anchor-ong');
+    if($("div[name='"+ 'anchor-ong' +"']").exists() ){
+        scrollToAnchor('anchor-ong');
+    }else{
+        window.location.href = 'victorgirongoudard.com/climat/#anchor-ong';   
+    }
+    
  });
  
