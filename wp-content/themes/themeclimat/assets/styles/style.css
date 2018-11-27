@@ -72,7 +72,7 @@ main.front-page h3{
 main.front-page .article-thumbnail{
     width:250px;
 }
-main h4{
+main h4,h3{
     margin-bottom: 5px;
     margin-top: 10px;
     color: rgb(59, 59, 59);
@@ -96,7 +96,14 @@ main.category-page{
 } 
 main.category-page h1{
     margin-bottom:  30px ;
+
 } 
+main .etudes-list {
+    margin-bottom: 50px;
+}
+main .etudes-list h3 {
+    margin-bottom: 20px;
+}
 .article-list{
     display: flex;
     flex-wrap: wrap;
@@ -116,6 +123,7 @@ main.category-page h1{
  main .etudes-list > div {
      display: flex;
      padding: 10px;
+     height: 300px;
      
  }
  main .etudes-list img {

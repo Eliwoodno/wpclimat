@@ -32,7 +32,7 @@
           </a> 
             <div> 
               <a href="<?php the_permalink() ?>">   
-                <h4><?php the_title() ?></h4>
+                <h3><?php the_title() ?></h3>
               </a>  
               <p><?php the_field('accroche') ?></p>
             </div>  

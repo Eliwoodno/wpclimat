@@ -2,7 +2,11 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
+        <link rel="shortcut icon" href="<?php FAVICONS_URL . '/favicon.ico' ?>" type="image/x-icon">
+        <link rel="icon" href="<?php FAVICONS_URL . '/favicon.png' ?>" type="image/png">
+        <link rel="icon" sizes="32x32" href="<?php FAVICONS_URL . '/favicon-32.png' ?>" type="image/png">
+        <link rel="icon" sizes="64x64" href="<?php FAVICONS_URL . '/favicon-64.png' ?>" type="image/png">
+        <link rel="icon" sizes="96x96" href="<?php FAVICONS_URL . '/favicon-96.png' ?>" type="image/png">
         <!-- Appel du fichier style.css de notre thème -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
