@@ -191,11 +191,13 @@ main.single-page .thumbnail img{
 .associated-ongs > div{
     display: flex;
     justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 40px;
 }    
 .associated-ongs > div > .ong-logo{
     margin-bottom: 20px;
 }
-.associated-ongs > div > p{
+.associated-ongs > div > a{
     text-align: center;
     }
 
