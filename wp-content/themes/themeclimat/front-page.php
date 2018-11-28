@@ -28,7 +28,7 @@
           </div>  
           <div class="articles-content-preview">  
             <h4><?php the_title() ?></h4>
-            <p><?php the_field('accroche') ?></p>
+            <p style="font-size:14px;"><?php the_field('accroche') ?></p>
           </div>
         </a>
       </div>
