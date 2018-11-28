@@ -29,7 +29,7 @@ $(".link-to-ongs").click(function() {
     if($("div[name='"+ 'anchor-ong' +"']").exists() ){
         scrollToAnchor('anchor-ong');
     }else{
-        window.location.href = 'victorgirongoudard.com/climat/#anchor-ong';   
+        window.location.href = '/climat/#anchor-ong';   
     }
     
  });
