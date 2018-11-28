@@ -59,14 +59,20 @@ main .featured-articles-wrapper .featured-article{
     margin-bottom: 40px;
 }
 main .featured-articles-wrapper .featured-article>:first-child {
-    margin-top: 2.5rem;
+    
     display: block;
     padding: 0 2rem 0;  
 }
 main .featured-articles-wrapper .featured-article .article-thumbnail-wrapper{
     position: relative;
     top: 0;
+    margin-left: -2rem;
+    margin-right: -2rem;
 }
+main .featured-articles-wrapper .featured-article .article-thumbnail-wrapper img{
+    margin: -2.5rem -2rem 0;
+}
+
 main .featured-articles-wrapper .featured-article .articles-content-preview{
     background: #fff;
     padding: 1.1rem 0;
@@ -74,7 +80,8 @@ main .featured-articles-wrapper .featured-article .articles-content-preview{
     text-align: center;
     z-index: 2;
     display: block;
-    top: -2.5rem;
+    top:-2.5px;
+    
 }
 
 main.front-page .map-container{
