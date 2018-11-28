@@ -182,18 +182,23 @@ main .etudes-list h3 {
 }
  main .etudes-list > div {
      padding: 20px;
+     display: flex;
  }
 
  main .etudes-list img {
-    margin-right:10px;
+    margin-right:15px;
     
 }
  main .etudes-list h3,p {
       font-family: 'PT-serif',serif;
+      color: black;
+      line-height: 1.5;
  }
  main .etudes-list h2 {
     font-family: 'PT-serif',serif;
     margin-bottom: 80px;
+    color: black;
+    font-size: 30px;
 }
 
 /*//////////////////////  Single /////////////////////////////*/
@@ -235,8 +240,10 @@ main.single-page .thumbnail img{
 }
 .associated-ongs > div > a{
     text-align: center;
-    }
-
+}
+.associated-ongs > div > a >p{
+    text-align: center;
+}
 
 
 /*//////////////////////  HEADER /////////////////////////////*/
@@ -252,7 +259,7 @@ header{
     z-index: 4;
 }
 #responsive-menu-button{
-    z-index: 10;
+    z-index: 10 !important;
 }
 header .menu-header-container{
     height:inherit;
