@@ -55,7 +55,7 @@ main .featured-articles-wrapper .featured-article{
     border: .01rem solid rgba(0,0,0,.09);
     font-family: 'PT Serif', serif;
     color: black;
-    flex: 0 0 28%;
+    flex: 0 0 31%;
     margin-bottom: 40px;
 }
 main .featured-articles-wrapper .featured-article>:first-child {
