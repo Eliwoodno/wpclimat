@@ -65,10 +65,14 @@
       ?>
       <div class="featured-article">
           <a href="<?php the_permalink() ?>">
-            <?php the_post_thumbnail( 'article-preview_thumb', array(
+            <div class="article-thumbnail-wrapper">
+              <?php the_post_thumbnail( 'article-preview_thumb', array(
               'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
-            <h4><?php the_title() ?></h4>
-            <p><?php the_field('accroche') ?></p>
+            </div>    
+            <div class="articles-content-preview">    
+              <h4><?php the_title() ?></h4>
+              <p><?php the_field('accroche') ?></p>
+            </div>
           </a>
       </div>
       <?php

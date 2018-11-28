@@ -250,6 +250,9 @@ header{
     justify-content: flex-start; 
     z-index: 4;
 }
+#responsive-menu-button{
+    z-index: 10;
+}
 header .menu-header-container{
     height:inherit;
     width: 100%;
@@ -496,6 +499,9 @@ footer > p{
 /*/////////////////////////// MEDIA QUERIES //////////////////////////////*/
 
 @media screen and (max-width: 992px) {
+    main .featured-articles-wrapper .featured-article{
+        flex: 0 0 42% !important;
+    }
     main .featured-articles-wrapper{
         justify-content: space-evenly !important;
     }
@@ -516,10 +522,12 @@ footer > p{
     main .featured-articles-wrapper{
         flex-flow: column;
         justify-content: space-evenly !important;
+        align-items: center;
     }
     main .featured-articles-wrapper .featured-article{
-        flex: 80%;
+        width: 60%;
         margin: auto;
+        margin-bottom: 30px;
     }  
     main .featured-articles-wrapper .featured-article p{
         display: none;
