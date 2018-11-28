@@ -181,19 +181,20 @@ main .etudes-list h3 {
     border: 2px solid #00D6A7;
 }
  main .etudes-list > div {
-     display: flex;
      padding: 20px;
  }
- main .etudes-list .image-link {
-    height:300px;
-}
+
  main .etudes-list img {
     margin-right:10px;
     
 }
- main .etudes-list a h4 {
-      margin: 0px 0px 20px 0px;
+ main .etudes-list h3,p {
+      font-family: 'PT-serif',serif;
  }
+ main .etudes-list h2 {
+    font-family: 'PT-serif',serif;
+    margin-bottom: 80px;
+}
 
 /*//////////////////////  Single /////////////////////////////*/
 main.single-page .content,main.single-page .title{
