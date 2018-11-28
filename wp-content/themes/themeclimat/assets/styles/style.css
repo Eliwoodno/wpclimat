@@ -66,13 +66,17 @@ main .featured-articles-wrapper .featured-article>:first-child {
 }
 main .featured-articles-wrapper .featured-article>:first-child:hover h4{
     text-decoration: underline;
-
+}
+main .featured-articles-wrapper .featured-article p{
+    line-height: 1.5;
+    font-size: 14px;
 }
 main .featured-articles-wrapper .featured-article .article-thumbnail-wrapper{
     position: relative;
     top: 0;
     margin-left: -1rem;
     margin-right: -1rem;
+    margin-top: -2.5rem;
 }
 main .featured-articles-wrapper .featured-article .article-thumbnail-wrapper img{
     width: 100%
