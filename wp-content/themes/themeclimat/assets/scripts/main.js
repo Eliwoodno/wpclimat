@@ -34,3 +34,38 @@ $(".link-to-ongs").click(function() {
     
  });
  
+ let codeToLinks = {
+    'AF': 'afrique', 
+    'NA': 'amerique-du-nord',
+    'OC': 'oceanie' ,
+    'AS': 'asie', 
+    'SA': 'amerique-du-sud',
+    'EU': 'europe' 
+    }
+let translatedLabel = {
+    'AF': 'Afrique', 
+    'NA': 'Amérique du Nord',
+    'OC': 'Océanie' ,
+    'AS': 'Asie', 
+    'SA': 'Amérique du Sud',
+    'EU': 'Europe' 
+    }
+
+$('#map-container').vectorMap({
+    map: 'continents_mill',
+    backgroundColor:'#00D6A7',
+    zoomOnScroll: false,
+        
+    onRegionClick:(event, regionCode) => { 
+                      
+            window.location.href = '/climat/'+codeToLinks[regionCode]; 
+        },
+        
+    onRegionTipShow:(e, el, regionCode) =>{
+
+            el.html(translatedLabel[regionCode]);
+        },
+
+});
+
+ 

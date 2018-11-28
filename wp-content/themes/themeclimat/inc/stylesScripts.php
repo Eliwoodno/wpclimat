@@ -17,11 +17,20 @@ wp_enqueue_style( 'font_awesome' );
 wp_register_style( 'style', CSS_URL . '/style.css' );
 wp_enqueue_style( 'style' );
 
+wp_register_style( 'jvectormap_style', CSS_URL . '/jquery-jvectormap-2.0.3.css' );
+wp_enqueue_style( 'jvectormap_style' );
+
 wp_register_style( 'font_awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' );
 wp_enqueue_style( 'font_awesome' );
 
 wp_register_script('jquery-min', JS_URL . '/jquery.min.js', array('jquery'),'1.0', true);
 wp_enqueue_script( 'jquery-min' );
+
+wp_register_script('jvectormap_script', JS_URL . '/jquery-jvectormap-2.0.3.min.js', array('jquery'),'1.0', true);
+wp_enqueue_script( 'jvectormap_script' );
+
+wp_register_script('jvectormap_mill', JS_URL . '/jquery-jvectormap-continent-mill.js', array('jquery'),'1.0', true);
+wp_enqueue_script( 'jvectormap_mill' );
 
 wp_register_script('main', JS_URL . '/main.js', array('jquery'),'1.0', true);
 wp_enqueue_script('main');

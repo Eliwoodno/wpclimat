@@ -97,10 +97,9 @@ main .featured-articles-wrapper .featured-article .articles-content-preview{
     margin-bottom: 15px !important;
 }
 
-main.front-page .map-container{
+main.front-page #map-container{
     height: 500px;
     width: 100%;
-    background-color: #D8D8D8;
     margin: 20px auto; 
 }
 
@@ -184,6 +183,9 @@ main .etudes-list h3 {
      padding: 40px;
      display: flex;
  }
+ main .etudes-list:hover h3 {
+    text-decoration: underline;
+}
 
  main .etudes-list img {
     margin-right:15px;
@@ -202,7 +204,6 @@ main .etudes-list h3 {
 }
 main .etudes-list h2 +div {
     position: relative;
-    left: -15px;
     background-color: white;
 
 }

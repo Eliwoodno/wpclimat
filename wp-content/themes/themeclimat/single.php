@@ -29,6 +29,12 @@
      <?php  endforeach; ?>  
      </div>   
    </div> 
+   <?php
+// Si les commentaires sont ouverts et qu'il y a au moins un commentaire
+     if ( comments_open() || get_comments_number() ) :
+     comments_template();
+     endif;
+    ?>
 
 </main>
 <?php get_footer() ?>

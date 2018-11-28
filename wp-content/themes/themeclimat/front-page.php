@@ -3,7 +3,7 @@
 <main class="front-page">
   <div>
     <h1>LE R&#201CHAUFFEMENT CLIMATIQUE, ÇA TOUCHE D&#201J&#192 L'HUMAIN!</h1>
-    <div class="map-container"></div>
+    <div id="map-container"></div>
     <p>Sélectionnez un point sur la carte<p>
   </div> 
   <div>
