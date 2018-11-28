@@ -178,10 +178,10 @@ main .etudes-list h3 {
  }
  main .etudes-list > div {
      
-    box-shadow: 0 0 5px #000;
+     box-shadow: 0 0 14px rgb(234, 234, 234);
 }
  main .etudes-list > div {
-     padding: 20px;
+     padding: 40px;
      display: flex;
  }
 
@@ -199,6 +199,12 @@ main .etudes-list h3 {
     margin-bottom: 80px;
     color: black;
     font-size: 30px;
+}
+main .etudes-list h2 +div {
+    position: relative;
+    left: -15px;
+    background-color: white;
+
 }
 
 /*//////////////////////  Single /////////////////////////////*/
