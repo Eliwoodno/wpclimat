@@ -257,6 +257,10 @@ main.single-page .thumbnail img{
     margin: auto;
     margin-bottom: 40px;
 } 
+.associated-ongs p{
+    font-family: 'Roboto',sans-serif;
+    font-weight:bold;
+} 
 .associated-ongs >div >div{
     text-align:center;
 } 
@@ -278,7 +282,10 @@ main.single-page .thumbnail img{
 .associated-ongs > div > a >p{
     text-align: center;
 }
-
+#anchor-ong p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
 
 /*//////////////////////  HEADER /////////////////////////////*/
 header{
