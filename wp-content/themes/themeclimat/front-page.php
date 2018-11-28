@@ -11,7 +11,7 @@
     <div class="featured-articles-wrapper">
       <?php
           $args =  array(
-            'posts_per_page' => 4
+            'posts_per_page' => 3
           );
           $the_query = new WP_Query( $args );
           if($the_query-> have_posts())
@@ -32,6 +32,7 @@
           </div>
         </a>
       </div>
+      
       <?php
           }
 
@@ -43,7 +44,8 @@
 
       ?>
       
-      
+    <div class="featured-article dummy"></div>
+    
     </div> 
   </div>    
   <div name='anchor-ong' id='anchor-ong'>

@@ -58,6 +58,10 @@ main .featured-articles-wrapper .featured-article{
     flex: 0 0 31%;
     margin-bottom: 40px;
 }
+.featured-article.dummy{
+    border: none !important;
+
+}
 main .featured-articles-wrapper .featured-article>:first-child {
     
     display: block;
@@ -207,6 +211,21 @@ main .etudes-list h2 +div {
     background-color: white;
 
 }
+main .featured-articles-wrapper +div{
+    text-align: center;
+    position: relative;
+    top: -30px;
+    
+    }
+main .featured-articles-wrapper +div .readMore{
+    border:1px solid #00D6A7;
+    padding: 10px 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    background-color: #00D6A7;
+    color: white;
+
+}
 
 /*//////////////////////  Single /////////////////////////////*/
 main.single-page .content,main.single-page .title{
@@ -224,6 +243,7 @@ main.single-page .title{
 main.single-page .content{
    line-height: 40px;
    font-size: 18px;
+   margin-bottom: 40px;
 }
 main.single-page .thumbnail img{
     max-width:100%;
@@ -235,6 +255,12 @@ main.single-page .thumbnail img{
     max-width: 740px;
     margin: auto;
     margin-bottom: 40px;
+} 
+.associated-ongs >div >div{
+    text-align:center;
+} 
+.associated-ongs p{
+    text-align: center;
 } 
 .associated-ongs > div{
     display: flex;
@@ -419,10 +445,12 @@ footer{
     color: white;
     list-style: none;
     font-weight: 100;
-    padding: 40px 40px 10px 40px;
+    padding: 40px 80px 10px 80px;
+    
 }
-footer a{
-    color:inherit;
+footer a,p{
+    color:white;
+    font-family: 'Roboto', sans-serif;
 }
 footer a:hover{
     color:lightgrey;

@@ -8,20 +8,14 @@
             <li><a href="#" title="">Derniers articles</a></li>       
         </ul>
     </li> 
-    <li><p>Associations</p>
+    <li><p>Continents</p>
         <ul>
-            <li><a href="#" title="">Asso sympa</a></li>
-            <li><a href="#" title="">Asso utile</a></li>
-            <li><a href="#" title="">Asso stylée</a></li>
-            <li><a href="#" title="">Asso géniale</a></li>            
-        </ul>
-    </li> 
-    <li><p>&Agrave propos</p>
-        <ul>
-            <li><a href="#" title="">Rapport annuel</a></li>
-            <li><a href="#" title="">Politique de cookies</a></li>
-            <li><a href="#" title="">Mentions Légales</a></li>
-            <li><a href="#" title="">& Licence de droits d'usage</a></li> 
+            <li><a href="/climat/afrique" title="">Afrique</a></li>   
+            <li><a href="/climat/amerique-du-nord" title="">Amérique du Nord</a></li>
+            <li><a href="/climat/amerique-du-sud" title="">Amérique du Sud</a></li>
+            <li><a href="/climat/asie" title="">Asie</a></li>
+            <li><a href="/climat/europe" title="">Europe</a></li> 
+            <li><a href="/climat/oceanie" title="">Océanie</a></li>            
         </ul>
     </li> 
     <li><p>Contact</p>

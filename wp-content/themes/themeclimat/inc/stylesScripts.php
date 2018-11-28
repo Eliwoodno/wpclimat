@@ -35,6 +35,10 @@ wp_enqueue_script( 'jvectormap_mill' );
 wp_register_script('main', JS_URL . '/main.js', array('jquery'),'1.0', true);
 wp_enqueue_script('main');
 
+wp_register_script('ajaxjs', JS_URL . '/ajaxjs.js', array('jquery'),'1.0', true);
+wp_localize_script('ajaxjs', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+wp_enqueue_script('ajaxjs');
+
 
 
 }
