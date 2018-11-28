@@ -91,7 +91,7 @@ main .featured-articles-wrapper .featured-article .articles-content-preview{
     padding: 1.1rem 0;
     position: relative;
     text-align: center;
-    z-index: 2;
+    z-index: 0;
     display: block;
     top:-25px;
     
@@ -297,7 +297,7 @@ header{
     background-color:white;
     display: flex;
     justify-content: flex-start; 
-    z-index: 4;
+    z-index: 1;
 }
 #responsive-menu-button{
     z-index: 10 !important;

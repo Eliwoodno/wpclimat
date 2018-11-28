@@ -1,5 +1,6 @@
 /*add overlay on page when displaying responsive menu 
 prevent link clicking when user tries to close the menu*/
+$('#responsive-menu-button').css('z-index','4!important');
 
 $('#responsive-menu-button').on('click', () => {
     $('.overlay').show()
