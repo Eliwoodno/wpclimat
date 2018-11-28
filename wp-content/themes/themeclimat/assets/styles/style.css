@@ -52,10 +52,11 @@ main .featured-articles-wrapper{
 main .featured-articles-wrapper .featured-article{
     text-align: center;
     position: relative;
-    border: .1rem solid rgba(0,0,0,.09);
+    border: .01rem solid rgba(0,0,0,.09);
     font-family: 'PT Serif', serif;
     color: black;
-    flex: 1 0 29%;
+    flex: 0 0 28%;
+    margin-bottom: 40px;
 }
 main .featured-articles-wrapper .featured-article>:first-child {
     margin-top: 2.5rem;
@@ -107,9 +108,7 @@ main.front-page h3::before{
     left: 0px;
     border-top: 4px solid #00D6A7;
 }
-main.front-page .article-thumbnail{
-    width:250px;
-}
+
 main h4,h3{
     margin-bottom: 5px;
     margin-top: 10px;

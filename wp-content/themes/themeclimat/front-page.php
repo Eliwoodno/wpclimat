@@ -22,7 +22,7 @@
       ?>
       <div class="featured-article">
         <a href="<?php the_permalink() ?>">
-          <div class="article-tumbnail-wrapper">
+          <div class="article-thumbnail-wrapper">
           <?php the_post_thumbnail( 'article-preview_thumb', array(
             'class' => "article-thumbnail",'alt' => get_the_title() ) ); ?>
           </div>  
@@ -42,7 +42,7 @@
         wp_reset_postdata();
 
       ?>
-      <div class="style:order2; visibilty:none;"></div>
+      
       
     </div> 
   </div>    
