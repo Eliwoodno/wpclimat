@@ -31,7 +31,7 @@
             </div>
           </a> 
             <div> 
-                <h2>&#201tude de cas.</h2>
+                <h2>&#201tude de cas</h2>
               <a href="<?php the_permalink() ?>">   
                 <h3><?php the_title() ?></h3>
               </a>  

@@ -178,7 +178,7 @@ main .etudes-list h3 {
  }
  main .etudes-list > div {
      
-    border: 2px solid #00D6A7;
+    box-shadow: 0 0 5px #000;
 }
  main .etudes-list > div {
      padding: 20px;
