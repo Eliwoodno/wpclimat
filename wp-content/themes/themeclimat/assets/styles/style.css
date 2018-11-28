@@ -214,7 +214,8 @@ main .etudes-list h2 +div {
 main .featured-articles-wrapper +div{
     text-align: center;
     position: relative;
-    top: -30px;
+    top: -10px;
+    margin-bottom: 50px;
     
     }
 main .featured-articles-wrapper +div .readMore{
@@ -448,7 +449,7 @@ footer{
     padding: 40px 80px 10px 80px;
     
 }
-footer a,p{
+footer a,footer p{
     color:white;
     font-family: 'Roboto', sans-serif;
 }
