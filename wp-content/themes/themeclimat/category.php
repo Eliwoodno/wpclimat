@@ -51,7 +51,7 @@
   </div>
 
   <!-- Articles -->
-  <div class="article-list">
+  <div class="featured-articles-wrapper">
       <?php
           $args =  array(
             'cat' => get_queried_object()->term_id,

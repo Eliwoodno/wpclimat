@@ -52,7 +52,7 @@ main .featured-articles-wrapper{
 main .featured-articles-wrapper .featured-article{
     text-align: center;
     position: relative;
-    border: .01rem solid rgba(0,0,0,.09);
+    border: .05rem solid rgba(0,0,0,.09);
     font-family: 'PT Serif', serif;
     color: black;
     flex: 0 0 31%;
@@ -89,11 +89,11 @@ main .featured-articles-wrapper .featured-article .articles-content-preview{
     text-align: center;
     z-index: 2;
     display: block;
-    top:-18.5px;
+    top:-25px;
     
 }
 .articles-content-preview h4{
-    margin-top: 15px !important;
+    margin-top: 10px !important;
     margin-bottom: 15px !important;
 }
 
@@ -496,7 +496,7 @@ footer > p{
 /*/////////////////////////// MEDIA QUERIES //////////////////////////////*/
 
 @media screen and (max-width: 992px) {
-    main.front-page > .featured-articles-wrapper, main.category-page .article-list{
+    main .featured-articles-wrapper{
         justify-content: space-evenly !important;
     }
     main.front-page > div:nth-child(3) >div{
@@ -513,6 +513,17 @@ footer > p{
   }
 
   @media screen and (max-width: 776px) {
+    main .featured-articles-wrapper{
+        flex-flow: column;
+        justify-content: space-evenly !important;
+    }
+    main .featured-articles-wrapper .featured-article{
+        flex: 80%;
+        margin: auto;
+    }  
+    main .featured-articles-wrapper .featured-article p{
+        display: none;
+    }
     main .etudes-list > div {
         flex-wrap: wrap;
         padding: 10px;
